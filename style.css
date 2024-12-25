@@ -14,7 +14,7 @@ main {
     height: 100vh;
     background: url(istana.JPG) center no-repeat;
     background-size: cover;
-    padding: 2% 5%;
+    padding: 0% 3%;
     position: relative;
 }
 
@@ -66,6 +66,11 @@ header a ;:hover {
     color: #ffcc00;
 }
 
+.title h5{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
 
 .content {
     position: absolute;
