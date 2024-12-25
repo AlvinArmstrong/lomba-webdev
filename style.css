@@ -66,7 +66,28 @@ header a ;:hover {
     color: #ffcc00;
 }
 
+
 .content {
-    padding: 100px 20px; /* Add padding to avoid content being hidden behind the navbar */
+    position: absolute;
     text-align: center;
+    top: 50%;
+    right: 30%;
+    transform: translate(0, -50%);
+}
+
+.content h4 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.content h1 span {
+    font-weight: 400;
+    color: #ffffff;
 }
