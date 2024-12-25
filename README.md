@@ -1,2 +1,2 @@
 UPDATE PREVIEW WEBSITE:
-![Uploading screencapture-127-0-0-1-5500-main-html-2024-12-25-13_29_09.png…]()
+![website](https://github.com/user-attachments/assets/223932dc-5263-4a50-be3b-1507f185620c)
