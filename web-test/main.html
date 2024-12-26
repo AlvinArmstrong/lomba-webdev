@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desain Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .container {
+    }
+
+    .address-section {
+      flex: 1 1 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .address-section h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .map {
+      background: url('https://via.placeholder.com/600x300') no-repeat center/cover;
+      height: 300px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .map .pin {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .address-section p {
+      text-align: center;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .info-section {
+      flex: 1 1 35%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .info-box h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .info-box .price-details {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .price-details div {
+      flex: 1;
+      text-align: center;
+      font-size: 1em;
+      color: #555;
+    }
+
+    .price-details div p {
+      margin-top: 5px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Address Section -->
+    <div class="address-section">
+      <h1>ALAMAT</h1>
+      <div class="map">
+        <div class="pin"></div>
+      </div>
+      <p>Surodadi, Wonolelo, Sawangan, Kabupaten Magelang, Jawa Tengah</p>
+    </div>
+
+    <!-- Information Section -->
+    <div class="info-section">
+      <!-- Opening Hours -->
+      <div class="info-box">
+        <h2>JAM BUKA</h2>
+        <p>06.00 - 18.00</p>
+      </div>
+
+      <!-- Ticket Prices -->
+      <div class="info-box">
+        <h2>HARGA TIKET MASUK</h2>
+        <div class="price-details">
+          <div>
+            <p>Weekday</p>
+            <p>Rp10.500</p>
+          </div>
+          <div>
+            <p>Weekend</p>
+            <p>Rp13.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
