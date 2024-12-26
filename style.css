@@ -261,7 +261,7 @@ footer{
    background-color: #DC943B;
 }
 
-/********** Responsive Design ********/
+/* Responsive Design */
 @media(max-width:900px)
 {
  .row{
