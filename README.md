@@ -1,5 +1,6 @@
 UPDATE PREVIEW WEBSITE:
-![screencapture-127-0-0-1-5500-main-html-2024-12-25-13_54_42](https://github.com/user-attachments/assets/f9c0e10c-f897-4d2e-8b68-452ce2d2f49a)
+![screencapture-127-0-0-1-5500-main-html-2024-12-26-20_20_00](https://github.com/user-attachments/assets/c7fb4375-a36c-4c07-a881-4b1e259379a1)
+
 
 PREVIEW
 
