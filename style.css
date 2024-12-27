@@ -70,7 +70,7 @@ header a :hover {
 }
 
 /* Main */
-.container {
+.container-card {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
