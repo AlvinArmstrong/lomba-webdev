@@ -2,9 +2,10 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", serif;
   height: 100%;
 }
+
 
 * {
   box-sizing: border-box;
@@ -61,8 +62,8 @@ header ol li a {
 
 
 header ol li a:hover {
-  color: orangered;
-  border-bottom: 1px solid orangered;
+  color: #DC943B;
+  border-bottom: 1px solid #DC943B;
 }
 
 header a :hover {
@@ -92,8 +93,8 @@ header a :hover {
   padding: 20px;
   text-align: center;
   flex: 1;
-  min-width: 280px;
-  max-width: 380px;
+  min-width: 380px;
+  max-width: 480px;
 }
 
 .card h2 {
@@ -108,7 +109,7 @@ header a :hover {
   color: #777;
 }
 
-.card img {
+.card iframe {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
