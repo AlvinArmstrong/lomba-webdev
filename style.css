@@ -29,8 +29,8 @@ main:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Darkens the background image */
-  z-index: 0; /* Keeps the overlay behind the content */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 /* Header */
@@ -38,10 +38,25 @@ header, section {
   z-index: 2;
 }
 
+.hero-title {
+  background-color: #DC943B;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 15px 30px;
+  margin-top: 50px; /* Adds distance between the button and elements above it */
+  cursor: pointer;
+  border-radius: 50px; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 header {
   width: 100%;
-  position: relative; /* Ensure navbar is positioned relative to the viewport */
-  z-index: 2; /* Make sure it's above the dark overlay */
+  position: relative; 
+  z-index: 2; 
 }
 
 header ol {
@@ -98,17 +113,20 @@ header a :hover {
   color: #ffffff;
   font-weight: 400;
   margin: 0 auto;
-  z-index: 1; /* Ensures content stays above the overlay */
+  z-index: 1; 
 
 }
 
 .hero-section p {
-  font-size: 16px; /* Adjusted for readability */
-  color: rgba(255, 255, 255, 0.9); /* Lightened the color for better contrast */
-  line-height: 1.8; /* Adds proper spacing between lines */
-  max-width: 600px; /* Restricts width for a more focused layout */
-  margin: 20px auto 0; /* Centers the text and adds spacing */
-  text-align: center; /* Centers the text horizontally */
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8; 
+  max-width: 600px; 
+  margin: 20px auto 0;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
 }
 
 .hero-section h1 {
@@ -116,6 +134,7 @@ header a :hover {
   color: #ffffff;
   font-weight: 700;
   margin: 10px 0;
+  margin-bottom: 30px; /* Space below heading */
 }
 
 
@@ -131,17 +150,18 @@ header a :hover {
   border: none;
   outline: none;
   text-transform: uppercase;
-  font-size: 28px;
-  padding: 15px 30px;
+  font-size: 20px;
+  padding: 10px 60px;
   margin-top: 20px;
   cursor: pointer;
-  border-radius: 50px; /* Adds a smooth rounded corner */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Adds hover effects for better UX */
+  margin: 40px 0; 
+  border-radius: 50px; 
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .hero-section button:hover {
-  background-color: #BF7A2A; /* Slightly darker shade for hover effect */
-  transform: translateY(-3px); /* Adds a subtle lift effect on hover */
+  background-color: #BF7A2A; 
+  transform: translateY(-3px);
 }
 
 
@@ -225,7 +245,7 @@ header a :hover {
 .horizontal-card {
 display: flex;
 justify-content: space-between;
-gap: 40px; /* optional, adds space between the cards */
+gap: 40px;
 }
 
 /* Gallery */
