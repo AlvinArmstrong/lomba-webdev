@@ -179,8 +179,6 @@ header a :hover {
   padding: 20px;
   text-align: center;
   flex: 1;
-  min-width: 380px;
-  max-width: 480px;
 }
 
 .card h2 {
@@ -318,6 +316,43 @@ gap: 40px; /* optional, adds space between the cards */
   }
 }
 
+/* Ulasan */
+#reviewBox {
+  background-color: #2F5442;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  box-shadow: #777;
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 33.333333%;
+    display: block;
+  }
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+.container-item .card {
+  margin: 0.5em;
+}
+
+/* Kontak */
+#kontakBox {
+  background-color: #f2f2f2;
+}
+
 /* Footer */
 footer {
   background-color: #2F5442;
@@ -327,15 +362,13 @@ footer {
   padding: 3rem 1rem;
 }
 
-.container {
+footer .container {
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
 }
 
 .row {
@@ -347,7 +380,7 @@ footer {
 .col {
   min-width: 250px;
   color: #f2f2f2f2;
-  font-family: poppins;
+  font-family: montserrat;
   padding: 0 2rem;
 }
 
