@@ -2,18 +2,12 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", serif;
-  height: 100%;
-}
-
-
-* {
-  box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 main {
   width: 100%;
-  height: 100vh;
+  height: 92vh;
   background: url(istana.JPG) center no-repeat;
   background-color: #000;
   background-size: cover;
@@ -34,45 +28,58 @@ main:before {
 }
 
 /* Header */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  height: 8vh;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+
 header, section {
   z-index: 2;
 }
 
-.hero-title {
-  background-color: #DC943B;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 700;
-  border: none;
-  outline: none;
-  text-transform: uppercase;
-  font-size: 28px;
-  padding: 15px 30px;
-  margin-top: 50px; /* Adds distance between the button and elements above it */
-  cursor: pointer;
-  border-radius: 50px; 
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-header {
+nav {
   width: 100%;
   position: relative; 
   z-index: 2; 
+  text-decoration: none;
 }
 
-header ol {
+nav ol {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-header ol li {
+nav ol li {
   padding: 0 20px;
 }
 
-header ol li a {
+nav ol li a {
   text-transform: uppercase;
   text-decoration: none;
+  border-bottom: none;
   font-weight: 700;
   color: #ffffff;
   font-size: 16px;
@@ -80,23 +87,16 @@ header ol li a {
 }
 
 
-header ol li a:hover {
+nav ol li a:hover {
   color: #f33232;
   border-bottom: 1px solid #DC943B;
 }
 
-header a :hover {
+nav a:hover {
   color: #ffcc00;
 }
 
 /* Hero Section */
-.title {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-}
-
 .hero-section {
   position: absolute;
   text-align: center;
@@ -165,6 +165,58 @@ header a :hover {
 }
 
 
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .hero-section h1 {
     font-size: 35px; 
@@ -174,6 +226,19 @@ header a :hover {
     font-size: 18px;
   }
 }
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
 
 
 /* Main */
@@ -199,6 +264,8 @@ header a :hover {
   padding: 20px;
   text-align: center;
   flex: 1;
+  min-width: 380px;
+  max-width: 480px;
 }
 
 .card h2 {
@@ -245,6 +312,7 @@ display: flex;
 justify-content: space-between;
 gap: 40px;
 }
+
 
 /* Gallery */
 .galeri-section {
@@ -336,43 +404,6 @@ gap: 40px;
   }
 }
 
-/* Ulasan */
-#reviewBox {
-  background-color: #2F5442;
-  width: 100%;
-  height: fit-content;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-inner {
-  box-shadow: #777;
-}
-
-@media (min-width: 768px) {
-  .carousel-inner {
-    display: flex;
-  }
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 33.333333%;
-    display: block;
-  }
-}
-
-.carousel-inner {
-  padding: 1em;
-}
-.container-item .card {
-  margin: 0.5em;
-}
-
-/* Kontak */
-#kontakBox {
-  background-color: #f2f2f2;
-}
-
 /* Footer */
 footer {
   background-color: #2F5442;
@@ -382,13 +413,15 @@ footer {
   padding: 3rem 1rem;
 }
 
-footer .container {
+.container {
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+
 }
 
 .row {
@@ -400,7 +433,7 @@ footer .container {
 .col {
   min-width: 250px;
   color: #f2f2f2f2;
-  font-family: montserrat;
+  font-family: poppins;
   padding: 0 2rem;
 }
 
