@@ -273,77 +273,74 @@ nav ul li a {
 
 
 /* Main */
+/* Container utama di tengah layar */
 .container-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1200px;
-  padding: 20px;
-  justify-content: center;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  display: flex; /* Mengatur tata letak fleksibel */
+  flex-wrap: wrap; /* Membuat elemen fleksibel untuk pindah baris jika ruang sempit */
+  gap: 20px; /* Jarak antar elemen */
+  max-width: 1200px; /* Ukuran maksimal container */
+  width: 90%; /* Lebar menyesuaikan layar, dengan margin di kiri-kanan */
+  margin: 0 auto; /* Pusatkan secara horizontal */
+  padding: 20px; /* Jarak dari tepi layar */
+  justify-content: center; /* Rata tengah secara horizontal */
+  align-items: flex-start; /* Rata atas */
+  min-height: 100vh; /* Tinggi minimal agar selalu memenuhi layar */
 }
 
+/* Gaya umum untuk card */
 .card {
-  background: #fefefe;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  flex: 1;
-  min-width: 380px;
-  max-width: 480px;
+  background: #fefefe; /* Warna latar belakang */
+  border: 1px solid #ddd; /* Garis pembatas halus */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  padding: 20px; /* Jarak isi dari tepi card */
+  text-align: center; /* Teks rata tengah */
+  flex: none; /* Tidak memaksakan ukuran fleksibel */
+  width: 100%; /* Lebar penuh pada container */
+  max-width: 500px; /* Lebar maksimal untuk card */
+  transition: transform 0.3s ease; /* Efek transisi untuk memperbesar/memperkecil */
 }
 
-.card h2 {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-  color: #555;
+/* Menambahkan efek saat hover */
+.card:hover {
+  transform: scale(1.02); /* Perbesar sedikit saat hover */
 }
 
-.card p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #777;
+/* Card Maps berada di area kiri */
+.card-maps {
+  flex: 1; /* Memungkinkan mengambil ruang lebih banyak di sebelah kiri */
+  max-width: 600px; /* Ukuran maksimal card maps */
 }
 
-.card iframe {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+/* Card Info (Jam Buka & Harga Tiket Masuk) berada di area kanan */
+.card-info {
+  display: flex; /* Menjadikan container fleksibel */
+  flex-direction: column; /* Susunan elemen secara vertikal */
+  gap: 20px; /* Jarak antar elemen vertikal */
+  flex: 1; /* Mengambil ruang kosong yang tersisa */
 }
 
-.info-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-  margin-top: 10px;
+
+/* Responsivitas untuk tablet dan ponsel */
+@media (max-width: 768px) {
+  .container-card {
+    flex-direction: column; /* Tata letak vertikal untuk layar kecil */
+    align-items: center; /* Rata tengah secara horizontal */
+  }
+
+  .card-maps,
+  .card-info {
+    max-width: 100%; /* Lebar penuh pada layar kecil */
+  }
 }
 
-.info-section div {
-  flex: 1;
-  text-align: center;
+/* Responsivitas untuk ponsel kecil */
+@media (max-width: 480px) {
+  .card {
+    padding: 15px; /* Kurangi padding agar lebih pas */
+    font-size: 0.9rem; /* Kurangi ukuran teks */
+  }
 }
-
-.info-section div:not(:last-child) {
-  border-right: 1px solid #ddd;
-}
-
-.info-section div p {
-  margin: 5px 0;
-}
-.horizontal-card {
-display: flex;
-justify-content: space-between;
-gap: 40px;
-}
-
 
 /* Gallery */
 .galeri-section {
