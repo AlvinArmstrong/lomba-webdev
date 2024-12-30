@@ -513,7 +513,7 @@ margin-bottom: 10px;
   font-size: 36px;
   margin: 0;
 }
-.wisata-section .underline {
+.underline {
   width: 100px;
   height: 5px;
   background-color: #d68c3b;
@@ -582,7 +582,7 @@ margin-bottom: 10px;
   padding: 20px;
 }
 
-.galeri-section h1 {
+.galeri-section h1, .judul-contact h1{
   font-size: 36px;
   font-weight: bold;
   color: #000;
@@ -670,7 +670,6 @@ margin-bottom: 10px;
 #reviewBox {
   background-color: #2F5442;
   width: 100%;
-  margin: 1em;
   text-align: center;
 }
 #judul-review h1 {
@@ -680,7 +679,6 @@ margin-bottom: 10px;
   margin: 0;
   padding-top: 30px;
 }
-
 #carouselReview {
   padding: 1vw;
 }
@@ -713,6 +711,92 @@ margin-bottom: 10px;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* Kontak */
+#kontakBox {
+  text-align: center;
+  padding: 20px;
+}
+.contact-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin-top: 7vh;
+  height: auto;
+}
+.contact-left {
+  width: 500px;
+}
+.contact-left form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  background-color: #2F5442;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px;
+}
+.input-contact {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+.contact-form textarea {
+  height: 150px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-right {
+  height: 100%;
+  margin: 0;
+}
+.contact-sosmed {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #2F5442;
+  padding: 20px;
+  border-radius: 15px;
+  height: 100%;
+}
+.contact-form button {
+  color: #f2f2f2;
+  font-weight: 300;
+  background-color: #DC943B;
+  border-radius: 25px;
+  padding: 10px;
+  width: 30%;
+}
+.sosmed-button {
+  background-color: #DC943B;
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+}
+.sosmed-button i {
+  font-size: 30px;
+  margin-right: 15px;
+}
+@media (max-width:800px) {
+  .contact-form {
+    width: 85vw;
+  }
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-right {
+    width: 85vw;
+  }
 }
 
 /* Footer */
