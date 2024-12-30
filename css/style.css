@@ -360,20 +360,20 @@ gap: 40px;
 .daya-tarik-section {
   background-color: #2F5442;
   padding: 20px;
-  text-align: center;
 }
 .daya-tarik-section h1 {
   font-size: 36px;
   font-weight: bold;
   color: #f7f4ef;
   margin: 0;
-  
+  text-align: center;
 }
 .daya-tarik-section .underline {
   width: 100px;
   height: 5px;
   background-color: #d68c3b;
   margin: 10px auto;
+  margin-bottom: 50px;
 }
 .daya-card-grid {
   display: grid;
@@ -386,6 +386,7 @@ gap: 40px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 .daya-card img {
   width: 100%;
@@ -407,7 +408,6 @@ position: absolute;
 bottom: 50px;
 left: 10px;
 color: #ddd;
-margin: 5px;
 }
 .daya-card .card-price {
 position: absolute;
@@ -417,6 +417,26 @@ font-size: 16px;
 font-weight: bold;
 color: #ddd;
 text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+background-color: #d68c3b;
+border: none;
+padding: 5px 10px;
+border-radius: 15px;
+cursor:default;
+}
+.daya-card p.coming-soon {   
+  position:absolute ;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ddd;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  bottom: 10px;
+  left: 10px; 
+}
+.daya-card img.coming-soon {
+  opacity: 70%;
+}
+.daya-card:hover {
+  transform: translateY(-3px);
 }
 @media (max-width: 600px){
   .daya-card-grid {
@@ -425,19 +445,32 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   }
   .daya-card .card-title {
    font-size: 22px;
-   bottom: 100px; 
-  }
-  .daya-card .card-title {
-    font-size: 22px;
-    bottom: 100px;
+   bottom: 110px; 
   }
   .daya-card .card-text {
     font-size: 14px;
+    bottom: 55px;
   }
   .daya-card .card-price {
     font-size: 14px;
   }
 }
+@media (min-width: 601px) {
+  .daya-card .card-title {
+    font-size: 20px;
+    bottom: 150px;
+  }
+  .daya-card .card-text { 
+    font-size: 14px;
+    bottom: 50px;
+  }
+}
+@media (min-width: 740px) { 
+  .daya-card .card-title {
+    bottom: 110px;
+  }
+}
+
 
 /* Section 3 : Fasilitas */
 .fasilitas-section {
@@ -531,7 +564,7 @@ margin-bottom: 10px;
   border-radius: 10px;
   color: #000;
   margin: 10px;
-  width: 500px;
+  width: 450px;
   box-shadow: 0 4px 6px;
   text-align: center;
   overflow: hidden;
