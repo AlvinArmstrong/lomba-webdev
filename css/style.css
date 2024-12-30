@@ -342,6 +342,241 @@ nav ul li a {
   }
 }
 
+<<<<<<< HEAD
+=======
+.info-section div:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.info-section div p {
+  margin: 5px 0;
+}
+.horizontal-card {
+display: flex;
+justify-content: space-between;
+gap: 40px;
+}
+
+/* Daya Tarik */
+.daya-tarik-section {
+  background-color: #2F5442;
+  padding: 20px;
+  text-align: center;
+}
+.daya-tarik-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f7f4ef;
+  margin: 0;
+  
+}
+.daya-tarik-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: #d68c3b;
+  margin: 10px auto;
+}
+.daya-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2 auto);
+  gap: 20px;
+}
+.daya-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.daya-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover ;
+}
+.daya-card .card-title {
+position: absolute;
+bottom: 150px;
+left: 10px;
+font-size: 28px;
+font-weight: bold;
+color: #ddd;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.daya-card .card-text {
+font-size: 16px;
+position: absolute;
+bottom: 50px;
+left: 10px;
+color: #ddd;
+margin: 5px;
+}
+.daya-card .card-price {
+position: absolute;
+bottom: 10px;
+left: 10px;
+font-size: 16px;
+font-weight: bold;
+color: #ddd;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 600px){
+  .daya-card-grid {
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+  }
+  .daya-card .card-title {
+   font-size: 22px;
+   bottom: 100px; 
+  }
+  .daya-card .card-title {
+    font-size: 22px;
+    bottom: 100px;
+  }
+  .daya-card .card-text {
+    font-size: 14px;
+  }
+  .daya-card .card-price {
+    font-size: 14px;
+  }
+}
+
+/* Fasilitas */
+.fasilitas-section {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.fasilitas-section h1 {
+  color:#000; 
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+}
+.fasilitas-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: #d68c3b;
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+.fasilitas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+}
+.fasilitas-card {
+position: relative;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+padding: 15px;
+background: #ddd;
+}
+.fasilitas-card img {
+width: 150px;
+height: 150px;
+margin-bottom: 10px;
+}
+.fasilitas-card .nama-fasilitas {
+  font-size: 1em;
+  color: #f33232;
+  margin: 0;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  line
+}
+@media screen and (max-width: 1024px) {
+  .fasilitas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width:480px) {
+  .fasilitas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Paket Wisata */
+.wisata-section {
+  background-color: #2F5442;
+  padding: 20px;
+  text-align: center;
+}
+.wisata-section h1 {
+  color: #ddd;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+}
+.wisata-section .underline {
+  width: 100px;
+  height: 5px;
+  background-color: #d68c3b;
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+.wisata-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.wisata-card {
+  background-color: #ddd;
+  border-radius: 10px;
+  color: #000;
+  margin: 10px;
+  width: 500px;
+  box-shadow: 0 4px 6px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.wisata-card .title-wisata {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.wisata-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.wisata-card .selengkapnya {
+  background-color: #d68c3b;
+  border: none;
+  color: #ddd;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 15px;
+  z-index: 3;
+}
+.wisata-card .selengkapnya:hover {
+  background-color: #DC943B;
+}
+@media (max-width: 768px){
+  .wisata-card {
+    width: 90%;
+  }
+}
+
+
+>>>>>>> 1a9a1e62e8a89158c31ba0bdea69bfd58e9c57bc
 /* Gallery */
 .galeri-section {
   text-align: center;
