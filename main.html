@@ -1,44 +1,59 @@
 <!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Negeri Kahyangan</title>
-  <link rel="stylesheet" href="style.css">
-  <!--Bootstrap-->
+  <!-- Bootstraps -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <script src="bootstrap.js"></script>
-  <link rel="stylesheet" href="bootstrap.css">
+  <script src="javascript/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
   <!--Font Montserrat-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <script src="javascript/script.js" defer></script>
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <main>
-    <!-- Header Section Start-->
-    <div class="logo">
-      <h5>Negeri Kahyangan</h5>
-    </div>
     <header>
-      <ol>
-        <li><a href="#profil" class="active">Profil</a></li>
-        <li><a href="#daya-tarik">Daya Tarik</a></li>
-        <li><a href="#fasilitas">Fasilitas</a></li>
-        <li><a href="#galeri">Galeri</a></li>
-        <li><a href="#ulasan">Ulasan</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ol>
+      <!-- Header Section Start-->
+      <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#" class="logo">Negeri Kahyangan</a>
+
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#daya-tarik">Daya Tarik</a></li>
+          <li><a href="#fasilitas">Fasilitas</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#ulasan">Ulasan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://wa.me"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </nav>
     </header>
   </main>
+
   <!-- Header Section End-->
 
   <div class="hero-section">
@@ -54,42 +69,145 @@
 
   <!--Section 1 : Infomation-->
   <div class="container-card">
-    <div class="vertical-card">
+    <!-- Card Maps -->
+    <div class="card card-maps">
+      <h2>Alamat</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8478793442187!2d110.39940849999999!3d-7.4820445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a634181e93e05%3A0xd27bc64f6fdfa11b!2sNegeri%20Kahyangan!5e0!3m2!1sen!2sid!4v1735271591567!5m2!1sen!2sid" 
+      width="100%" 
+      height="300" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p>Surodadi, Wonolelo, Sawangan, Kabupaten Magelang, Jawa Tengah</p>
+    </div>
+  
+    <!-- Card Info (Jam Buka dan Harga Tiket Masuk) -->
+    <div class="card-info">
       <div class="card">
-        <h2>Alamat</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8478793442187!2d110.39940849999999!3d-7.4820445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a634181e93e05%3A0xd27bc64f6fdfa11b!2sNegeri%20Kahyangan!5e0!3m2!1sen!2sid!4v1735271591567!5m2!1sen!2sid"
-          width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>Surodadi, Wonolelo, Sawangan, Kabupaten Magelang, Jawa Tengah</p>
+        <h2>Jam Buka</h2>
+        <p>06.00 - 18.00</p>
       </div>
-      <div class="horizontal-card">
-        <div class="card">
-          <h2>Jam Buka</h2>
-          <div class="info-section">
-            <div>
-              <p>06.00</p>
-              <p>-</p>
-              <p>18.00</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <h2>Harga Tiket Masuk</h2>
-          <div class="info-section">
-            <div>
-              <p>Setiap Hari</p>
-              <p>Rp25.000</p>
-            </div>
-          </div>
-        </div>
+      <div class="card">
+        <h2>Harga Tiket Masuk</h2>
+        <p>Rp 25.000/orang</p>
       </div>
     </div>
   </div>
+  
+  
 
   <br>
-  
-  <!--Section 2 : Gallery -->
+
+<!-- Section 2 : Daya Tarik -->
+
+<div class="daya-tarik-section">
+  <h1>DAYA TARIK</h1>
+  <div class="underline"> 
+  </div>
+  <div class="daya-card-grid">
+    <div class="daya-card">
+      <img src="/images/hero.JPG" alt="">
+      <div class="card-title">Istana Kahyangan</div>
+      <div class="card-text">Sebuah kastil di Negeri Kahyangan. Lihatlah keindahan pegunungan dari tempat tinggi dengan spot foto yang menarik.</div>
+      <div class="card-price">HTM: Rp10.000</div>
+    </div>  
+    <div class="daya-card">
+      <img src="/images/hero.JPG" alt="Camping">
+      <div class="card-title">Camping</div>
+      <div class="card-text">Sebuah kastil di Negeri Kahyangan. Lihatlah keindahan pegunungan dari tempat tinggi dengan spot foto yang menarik.</div>
+      <div class="card-price">Rp450.000/4 org</div>
+    </div>
+    <div class="daya-card">
+      <img src="/images/hero.JPG" alt="Camping">
+      <div class="card-title">Camping</div>
+      <div class="card-text">Sebuah kastil di Negeri Kahyangan. Lihatlah keindahan pegunungan dari tempat tinggi dengan spot foto yang menarik.</div>
+      <div class="card-price">Rp450.000/4 org</div>
+    </div>
+    <div class="daya-card">
+      <img src="/images/hero.JPG" alt="Camping">
+      <div class="card-title">Camping</div>
+      <div class="card-text">Sebuah kastil di Negeri Kahyangan. Lihatlah keindahan pegunungan dari tempat tinggi dengan spot foto yang menarik.</div>
+      <div class="card-price">Rp450.000/4 org</div>
+    </div>   
+    </div>
+  </div>
+<br>
+
+<!--Section 3 : Fasilitas-->
+
+<div class="fasilitas-section">
+  <h1>FASILITAS</h1>
+  <div class="underline"></div>
+    <div class="fasilitas-grid">
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>parking area</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Musholla</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Toilet</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Spot foto gratis</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Cullinary Zone</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Camping Area</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Wahana 360</p></div>
+      </div>
+      <div class="fasilitas-card">
+        <img src="/images/hero.JPG" alt="">
+        <div class="nama-fasilitas"><p>Homestay</p></div>
+      </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!--Section 4 : Paket Wisata-->
+<div class="wisata-section">
+  <h1>PAKET WISATA</h1>
+  <div class="underline"></div>
+    <div class="wisata-grid">
+      <div class="wisata-card">
+        <p class="title-wisata">Edukasi Pertanian Sayur</p>
+        <img src="/images/hero.JPG" alt="">
+        <button class="selengkapnya">Selengkapnya</button>
+      </div>
+      <div class="wisata-card">
+        <p class="title-wisata">Shuttle Negeri Kahyangan</p>
+        <img src="/images/hero.JPG" alt="">
+        <button class="selengkapnya">Selengkapnya</button>
+      </div>
+      <div class="wisata-card">
+        <p class="title-wisata">Wisata Jeep Negeri kahyangan</p>
+        <img src="/images/hero.JPG" alt="">
+        <button class="selengkapnya">Selengkapnya</button>
+      </div>
+    </div>
+</div>
+
+
+<br>
+
+
+
+
+  <!--Section 5 : Gallery -->
 
   <div class="galeri-section">
     <h1>GALERI</h1>
@@ -115,33 +233,34 @@
     </div>
     <div class="buttons">
       <button id="prev">
-        <<button id="next">>
+        <button id="next">>
       </button>
     </div>
     <ul class="dots">
-      <li class="active-gallery"></li>
+      <li class="active"></li>
       <li></li>
       <li></li>
       <li></li>
       <li></li>
     </ul>
   </div>
-  <script src="gallery.js"></script>
+  <script src="javascript/gallery.js"></script>
 
   <br>
-  
-  <!--Mulai Ulasan-->
+
+  <!--Section 6: Ulasan-->
   <div id="reviewBox" class="container-fluid">
     <div id="judul-review">
-      <h2>Ulasan</h2>
-      <div></div>
+      <h1>ULASAN</h1>
+      <div class="underline"></div>
     </div>
-    <div id="carouselReview" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselReview" class="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti1</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -150,7 +269,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti2</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -159,7 +279,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti3</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -168,7 +289,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti4</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -177,7 +299,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti5</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -186,7 +309,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti6</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -195,7 +319,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti7</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -204,7 +329,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti8</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -213,7 +339,8 @@
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
               <h5 class="card-title">Bu Kunti9</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">Malang</h6>
             </div>
@@ -232,63 +359,10 @@
   </div>
   <!--Akhir Ulasan-->
 
-  <!--Mulai Kontak-->
+  <!-- Section 7: Kontak-->
   <div id="kontakBox" class="container-fluid">
     <div class="judul-contact">
-      <h1>KONTAK</h1>
-      <div class="underline"></div>
-    </div>
-    <div class="contact-container">
-      <div class="contact-left">
-        <div>
-          <h5>Hubungi Kami</h5>
-          <hr>
-        </div>
-        <form class="contact-form">
-          <input type="name" name="name" placeholder="Nama" class="input-contact" required>
-          <input type="email" name="email" placeholder="Email" class="input-contact" required>
-          <textarea type="message" placeholder="Silakan jika ada yang ingin disampaikan" class="input-contact" required></textarea>
-          <button type="submit">Kirim</button>
-        </form>
-      </div>
-      <div class="contact-right">
-        <div>
-          <h5>Sosial Media</h5>
-          <hr>
-        </div>
-        <div class="contact-sosmed">
-          <a href="#">
-            <div class="sosmed-button">
-              <i class="fab fa-whatsapp"></i>
-              <h5>0815-1071-0464</h5>
-            </div>
-          </a>
-          <a href="#">
-            <div class="sosmed-button">
-              <i class="fab fa-instagram"></i>
-              <h5>@negeri_kahyangan</h5>
-            </div>
-          </a>
-          <a href="#">
-            <div class="sosmed-button">
-              <i class="fab fa-tiktok"></i>
-              <h5>@negerikahyangan_</h5>
-            </div>
-          </a>
-          <a href="#">
-            <div class="sosmed-button">
-              <i class="fab fa-facebook"></i>
-              <h5>Negeri Kahyangan</h5>
-            </div>
-          </a>
-          <a href="#">
-            <div class="sosmed-button">
-              <i class="fab fa-envelope"></i>
-              <h5>Negerikahyangan20@gmail.com</h5>
-            </div>
-          </a>
-        </div>
-      </div>
+      <h2>Kontak</h2>
     </div>
   </div>
   <!--Akhir Kontak-->
