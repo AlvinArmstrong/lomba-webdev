@@ -11,33 +11,30 @@ navCloseBtn.addEventListener("click", () => {
 });
 
 //Ulasan
+var multipleCardCarousel = document.querySelector("#carouselReview");
 
-
-var multipleCardCarousel = document.querySelector(
-  "#carouselReview"
-);
 if (window.matchMedia("(min-width: 768px)").matches) {
-  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-  var cardWidth = $(".carousel-item").width();
+  var carouselInner = $(".carousel-inner");
+  var carouselWidth = carouselInner[0].scrollWidth;
+  var cardWidth = $(".carousel-item").outerWidth(true); // Hitung termasuk margin
   var scrollPosition = 0;
 
   $(".carousel-control-next").on("click", function () {
-    if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
-      scrollPosition += cardWidth;  //update scroll position
-      $(".carousel-inner").animate({ scrollLeft: scrollPosition },600); //scroll left
+    if (scrollPosition < carouselWidth - carouselInner.width()) {
+      scrollPosition += cardWidth;
+      carouselInner.animate({ scrollLeft: scrollPosition }, 600);
     }
   });
+
   $(".carousel-control-prev").on("click", function () {
     if (scrollPosition > 0) {
       scrollPosition -= cardWidth;
-      $(".carousel-inner").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
+      carouselInner.animate({ scrollLeft: scrollPosition }, 600);
     }
   });
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-    interval: false
+
+  new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
   });
 } else {
   $(multipleCardCarousel).addClass("slide");
