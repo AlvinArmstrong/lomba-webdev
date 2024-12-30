@@ -233,7 +233,7 @@ nav ul li a {
     width: 50vw;
     height: 92vh;
     background: #23232e;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
@@ -479,13 +479,13 @@ margin-bottom: 10px;
 }
 .fasilitas-card .nama-fasilitas {
   font-size: 1em;
-  color: #f33232;
+  color: #000;
+  font-weight: bold;
   margin: 0;
   position: absolute;
   bottom: -75px;
   left: 50%;
   transform: translateX(-50%);
-
   padding: 5px 10px;
   border-radius: 5px;
   line-height: 1.5;
