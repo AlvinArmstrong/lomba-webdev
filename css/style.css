@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
 body {
   background: #f0faff;
 }
@@ -342,8 +341,6 @@ nav ul li a {
   }
 }
 
-<<<<<<< HEAD
-=======
 .info-section div:not(:last-child) {
   border-right: 1px solid #ddd;
 }
@@ -489,12 +486,13 @@ margin-bottom: 10px;
 
   padding: 5px 10px;
   border-radius: 5px;
-  line
+  line-height: 1.5;
 }
 @media screen and (max-width: 1024px) {
   .fasilitas-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 }
 @media screen and (max-width:480px) {
   .fasilitas-grid {
@@ -576,7 +574,6 @@ margin-bottom: 10px;
 }
 
 
->>>>>>> 1a9a1e62e8a89158c31ba0bdea69bfd58e9c57bc
 /* Gallery */
 .galeri-section {
   text-align: center;
