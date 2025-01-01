@@ -1,8 +1,13 @@
+:root {
+  --orange: #DC943B;
+  --green: #2F5442;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 } 
 body {
   background: #f0faff;
@@ -36,7 +41,8 @@ main:before {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0px 80px;
+  margin-top: 20px;
+  padding: 0px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,63 +55,64 @@ a {
 }
 
 .nav .logo {
-  font-size: 24px;
-  letter-spacing: 4px;
+  font-size: 1.5vw;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: #fff;
   text-decoration: none; 
   margin-top: 0;
 }
 
 .logo:hover {
-  color: #c88029;
+  color: var(--orange);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li {
-  padding: 0px 20px;
+  padding: 0px 0.5vw;
   margin-top: 10px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 1.5vw;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0.5vw;
   list-style: none;
   margin-top: 10px;
 }
 
 .nav .nav-links a {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   transition: all 0.3s ease;
 }
 
 .nav .nav-links a:hover {
-  color: #ffcc00;
-  border-bottom: 2px solid #dc943b;
+  color: var(--orange);
+  border-bottom: 2px solid var(--orange);
 }
 
 .social-icons {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;;
 }
 
 .social-icons a {
   color: #fff;
-  font-size: 20px;
+  font-size: 20;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #ffcc00;
+  color: var(--orange);
 }
 
 .nav .navOpenBtn,
@@ -116,17 +123,21 @@ nav ul li a {
 
 @media screen and (max-width: 1160px) {
   .nav {
-    padding: 20px 60px;
+    padding: 20px 40px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .nav {
-    padding: 20px 40px;
+    padding: 20px 20px;
   }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 901px) {
+  .nav .nav-links a {
+  font-size: 15px;
+  }
+}
+@media screen and (max-width: 900px) {
   .nav .navOpenBtn,
   .nav .navCloseBtn {
     display: block;
@@ -140,12 +151,12 @@ nav ul li a {
     position: fixed;
     top: 0;
     left: -100%;
-    height: 100%;
+    height: 100vh;
     max-width: 280px;
     width: 100%;
     padding-top: 100px;
     flex-direction: column;
-    background-color: #11101d;
+    background-color: var(--green);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
     z-index: 100;
@@ -169,6 +180,9 @@ nav ul li a {
     font-size: 20px;
     cursor: pointer;
   }
+  .nav .logo {
+    font-size: 20px;
+  }
 }
 
 /* Hero Section */
@@ -185,15 +199,16 @@ nav ul li a {
 
 .hero-section h1 {
   font-size: 50px;
+  letter-spacing: 4px;
   color: #ffffff;
   font-weight: 700;
   margin: 10px 0 30px;
 }
 
 .hero-section h4 {
-  font-size: 20px;
+  font-size: 23px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .hero-section p {
@@ -205,7 +220,7 @@ nav ul li a {
 }
 
 .hero-section button {
-  background-color: #DC943B;
+  background-color: var(--orange);
   color: rgba(255, 255, 255, 0.8);
   font-weight: 700;
   border: none;
@@ -220,7 +235,7 @@ nav ul li a {
 }
 
 .hero-section button:hover {
-  background-color: #BF7A2A;
+  background-color: var(--orange);
   transform: translateY(-3px);
 }
 
@@ -232,7 +247,7 @@ nav ul li a {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: var(--green);
     flex-direction: column; 
     align-items: center;
     justify-content: space-around;
@@ -277,15 +292,13 @@ nav ul li a {
 /* Section 1 : Information */
 .container-card {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   max-width: 1200px;
   width: 90%;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 20px;
   justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
+  align-items: center;
 }
 
 .card {
@@ -300,7 +313,9 @@ nav ul li a {
   max-width: 500px;
   transition: transform 0.3s ease;
 }
-
+.card-info .card {
+  height: 50%;
+}
 .card:hover {
   transform: scale(1.02);
 }
@@ -315,8 +330,22 @@ nav ul li a {
   flex-direction: column;
   gap: 20px;
   flex: 1;
+  height: 100%;
 }
-
+.card-info .card h2, .card-maps h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.card-info .card p {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 20px;
+}
+.card-maps p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 15px 15px 0px 15px
+}
 @media (max-width: 768px) {
   .container-card {
     flex-direction: column;
@@ -325,7 +354,8 @@ nav ul li a {
 
   .card-maps,
   .card-info {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
   }
 }
 
@@ -337,35 +367,23 @@ nav ul li a {
   }
 }
 
-.info-section div:not(:last-child) {
-  border-right: 1px solid #ddd;
-}
-
-.info-section div p {
-  margin: 5px 0;
-}
-.horizontal-card { 
-display: flex;
-justify-content: space-between;
-gap: 40px;
-}
 
 /* Section 2 : Daya Tarik */
 .daya-tarik-section {
-  background-color: #2F5442;
+  background-color: var(--green);
   padding: 20px;
 }
 .daya-tarik-section h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #f7f4ef;
+  color: #fff;
   margin: 0;
   text-align: center;
 }
 .daya-tarik-section .underline {
   width: 100px;
   height: 5px;
-  background-color: #d68c3b;
+  background-color: var(--orange);
   margin: 10px auto;
   margin-bottom: 50px;
 }
@@ -411,7 +429,7 @@ font-size: 16px;
 font-weight: bold;
 color: #ddd;
 text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-background-color: #d68c3b;
+background-color: var(--orange);
 border: none;
 padding: 5px 10px;
 border-radius: 15px;
@@ -482,7 +500,7 @@ cursor:default;
 .fasilitas-section .underline {
   width: 100px;
   height: 5px;
-  background-color: #d68c3b;
+  background-color: var(--orange);
   margin: 10px auto;
   margin-bottom: 50px;
 }
@@ -530,7 +548,7 @@ margin-bottom: 10px;
 
 /* Section 4 : Wisata */
 .wisata-section {
-  background-color: #2F5442;
+  background-color: var(--green);
   padding: 20px;
   text-align: center;
 }
@@ -543,7 +561,7 @@ margin-bottom: 10px;
 .underline {
   width: 100px;
   height: 5px;
-  background-color: #d68c3b;
+  background-color: var(--orange);
   margin: 10px auto;
   margin-bottom: 50px;
 }
@@ -580,7 +598,7 @@ margin-bottom: 10px;
   object-fit: cover;
 }
 .wisata-card .selengkapnya {
-  background-color: #d68c3b;
+  background-color: var(--orange);
   border: none;
   color: #ddd;
   padding: 10px 20px;
@@ -594,7 +612,7 @@ margin-bottom: 10px;
   z-index: 3;
 }
 .wisata-card .selengkapnya:hover {
-  background-color: #DC943B;
+  background-color: var(--orange);
 }
 @media (max-width: 768px){
   .wisata-card {
@@ -619,7 +637,7 @@ margin-bottom: 10px;
 .galeri-section .underline, #judul-review .underline {
   width: 100px;
   height: 5px;
-  background-color: #d68c3b;
+  background-color: var(--orange);
   margin: 10px auto 0;
 }
 
@@ -696,7 +714,7 @@ margin-bottom: 10px;
 
 /* Section 6 : Review */
 #reviewBox {
-  background-color: #2F5442;
+  background-color: var(--green);
   width: 100%;
   text-align: center;
 }
@@ -764,7 +782,7 @@ margin-bottom: 10px;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  background-color: #2F5442;
+  background-color: var(--green);
   padding: 25px;
   border-radius: 15px;
   width: 100%;
@@ -795,7 +813,7 @@ margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background: #2F5442;
+  background: var(--green);
   padding: 20px;
   border-radius: 15px;
   height: 100%;
@@ -803,13 +821,13 @@ margin-bottom: 10px;
 .contact-form button {
   color: #f2f2f2;
   font-weight: 300;
-  background-color: #DC943B;
+  background-color: var(--orange);
   border-radius: 25px;
   padding: 10px;
   width: 30%;
 }
 .sosmed-button {
-  background-color: #DC943B;
+  background-color: var(--orange);
   border-radius: 25px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -842,7 +860,7 @@ margin-bottom: 10px;
 
 /* Footer */
 footer {
-  background-color: #2F5442;
+  background-color: var(--green);
   position: relative;
   width: 100%;
   min-height: 350px;
@@ -888,7 +906,7 @@ footer {
   content: '';
   height: 3px;
   width: 0px;
-  background-color: #DC943B;
+  background-color: var(--orange);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -901,7 +919,7 @@ footer {
 }
 
 .col .social a i {
-  color: #DC943B;
+  color: var(--orange);
   margin-top: 2rem;
   margin-right: 5px;
   transition: 0.3s ease;
@@ -928,7 +946,7 @@ footer {
   position: absolute;
   top: 5px;
   left: -10px;
-  background-color: #DC943B;
+  background-color: var(--orange);
   transition: 0.5s ease;
   opacity: 0;
 }
@@ -939,7 +957,7 @@ footer {
 
 .col .links a:hover {
   transform: translateX(-8px);
-  color: #DC943B;
+  color: var(--orange);
 }
 
 .col .contact-details {
@@ -975,7 +993,7 @@ footer {
   border-radius: 6px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  background-color: #DC943B;
+  background-color: var(--orange);
 }
 
 
