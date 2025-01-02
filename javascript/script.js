@@ -39,3 +39,10 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 } else {
   $(multipleCardCarousel).addClass("slide");
 }
+
+//Cegah refresh waktu submit
+const form = document.querySelector('form'); 
+ 
+form.addEventListener('submit', function(event) { 
+  event.preventDefault();  
+}); 
