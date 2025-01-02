@@ -12,7 +12,25 @@
 body {
   background: #f0faff;
 }
-
+/* Common CSS */
+.underline {
+  width: 100px;
+  height: 5px;
+  background-color: var(--orange);
+  margin: 10px auto;
+  margin-bottom: 30px;
+}
+.card {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+/* Main */
 main {
   width: 100%;
   height: 100vh;
@@ -305,16 +323,6 @@ nav ul li a {
   align-items: center;
 }
 
-.card {
-  background: #fefefe;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  transition: transform 0.3s ease;
-}
 .card-info .card {
   height: 50%;
 }
@@ -591,13 +599,7 @@ margin-bottom: 10px;
   font-size: 36px;
   margin: 0;
 }
-.underline {
-  width: 100px;
-  height: 5px;
-  background-color: var(--orange);
-  margin: 10px auto;
-  margin-bottom: 50px;
-}
+
 .wisata-grid {
   display: flex;
   flex-wrap: wrap;
@@ -763,6 +765,9 @@ margin-bottom: 10px;
     display: block;
   }
 }
+#carouselReview {
+  padding-bottom: 30px;
+}
 .carousel-inner{
   padding: 1em;
   height: 100%;
@@ -782,6 +787,7 @@ margin-bottom: 10px;
     top: 50%;
     transform: translateY(-50%);
 }
+
 
 /* Section 7 : Kontak */
 #kontakBox {
