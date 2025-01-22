@@ -15,10 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  <script src="javascript/script.js" defer></script>
   <!--jQuery-->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -38,6 +38,10 @@
           <li><a href="#reviewBox">Ulasan</a></li>
           <li><a href="#kontakBox">Kontak</a></li>
         </ul>
+        <div class="switchlang">
+          <button onclick="setLanguage('en')">English</button>
+          <button onclick="setLanguage('id')">Bahasa</button>
+        </div>
         <div class="social-icons">
           <a href="https://api.whatsapp.com/send?phone=6281510710464&text=Hallo%20Min.." target="_blank"><i class="fab fa-whatsapp"></i></a>
           <a href="https://www.instagram.com/negeri_kahyangan/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -51,10 +55,9 @@
   <!-- Header Section End-->
 
   <div class="hero-section">
-    <h4>Terbenam dalam Keindahan</h4>
+    <h4 data-i18n="slogan"></h4>
     <h1>NEGERI KAHYANGAN</h1>
-    <p>Nuansa negeri dongeng di lembah Gunung Merbabu bak negeri kahyangan yang asri dan pastinya instagramable. Dilengkapi dengan berbagai
-    fasilitas yang lengkap serta nyaman membuat Negeri Kahyangan suatu destinasi wisata yang ramah keluarga.</p>
+    <p data-i18n="desc-hero"></p>
     <a href="#profil"><button>KUNJUNGI</button></a>
   </div>
 
@@ -527,5 +530,6 @@
     </div>
   </footer>
   <!--Footer Section Ended-->
+  <script src="javascript/script.js" defer></script>
 </body>
 </html>
