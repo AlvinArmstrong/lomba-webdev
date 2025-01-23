@@ -27,21 +27,21 @@
       <!-- Header Section Start-->
       <nav class="nav">
         <i class="uil uil-bars navOpenBtn"></i>
-        <a href="https://linktr.ee/negeri_kahyangan?utm_source=linktree_profile_share" class="logo">Negeri Kahyangan</a>
+        <a href="https://linktr.ee/negeri_kahyangan?utm_source=linktree_profile_share" class="logo">
+          <img src="images/logo.png" alt="Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+          Benjor Pine Camp Ground
+        </a>
         <ul class="nav-links">
           <i class="uil uil-times navCloseBtn"></i>
           <li><a href="#profil">Info</a></li>
-          <li><a href="#daya-tarik">Daya Tarik</a></li>
+          <li><a href="#rekomendasi">Rekomendasi Aktivitas</a></li>
           <li><a href="#fasilitas">Fasilitas</a></li>
           <li><a href="#paket-wisata">Paket Wisata</a></li>
           <li><a href="#galeri">Galeri</a></li>
           <li><a href="#reviewBox">Ulasan</a></li>
           <li><a href="#kontakBox">Kontak</a></li>
         </ul>
-        <div class="switchlang">
-          <button onclick="setLanguage('en')">English</button>
-          <button onclick="setLanguage('id')">Bahasa</button>
-        </div>
+        
         <div class="social-icons">
           <a href="https://api.whatsapp.com/send?phone=6281510710464&text=Hallo%20Min.." target="_blank"><i class="fab fa-whatsapp"></i></a>
           <a href="https://www.instagram.com/negeri_kahyangan/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -55,12 +55,9 @@
   <!-- Header Section End-->
 
   <div class="hero-section">
-    <h4 data-i18n="slogan"></h4>
-    <h1>NEGERI KAHYANGAN</h1>
-    <p data-i18n="desc-hero"></p>
-    <a href="#profil"><button>KUNJUNGI</button></a>
-  </div>
-
+    <h1>BENJOR PINE</h1>
+    <h4>Camping Ground</h4>
+  </div>
   <br>
 
   
@@ -201,110 +198,173 @@
   <br>
   <br>
   <!--Section 4 : Paket Wisata-->
-  <div id="paket-wisata" class="wisata-section">
-    <h1>PAKET WISATA</h1>
-    <div class="underline"></div>
-    <div class="wisata-grid">
-      <div class="wisata-card">
-        <p class="title-wisata">Edukasi Pertanian Sayur</p>
-        <img src="images/paket-wisata/sayur.jpg" alt="">
-        <a href="https://drive.google.com/file/d/1F7tWo0a85xwyuwYTezlAznQxXf2mWuyt/view"><button class="selengkapnya">Selengkapnya</button></a>
+  <style>
+    .container-colums {
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #e4efe1;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    .columns {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .list li {
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .list li span {
+      float: right;
+    }
+  </style>
+  <div class="container-columns">
+    <div class="header">PERALATAN CAMPING & GRILL</div>
+    <img src="https://via.placeholder.com/900x400" alt="Peralatan Camping" class="image">
+    <div class="content">
+      <div class="columns">
+        <div class="column">
+          <h3>Tenda</h3>
+          <ul class="list">
+            <li>Tenda Kapasitas 4 Orang <span>Rp. 40.000</span></li>
+            <li>Tenda Kapasitas 6 Orang <span>Rp. 55.000</span></li>
+            <li>Tenda Kapasitas 8 Orang <span>Rp. 65.000</span></li>
+            <li>Flysheet 3x4 <span>Rp. 10.000</span></li>
+            <li>Tiang Flysheet <span>Rp. 10.000</span></li>
+            <li>Bongkar Pasang Tenda <span>Rp. 20.000</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Perlengkapan</h3>
+          <ul class="list">
+            <li>Matras Spon <span>Rp. 5.000</span></li>
+            <li>Sleeping Bag <span>Rp. 10.000</span></li>
+            <li>Kompor Butana Kotak <span>Rp. 10.000</span></li>
+            <li>Kompor Portable (Besar) <span>Rp. 20.000</span></li>
+            <li>Cooking Set DS-301 (4 Set) <span>Rp. 10.000</span></li>
+            <li>Grill Pan <span>Rp. 20.000</span></li>
+            <li>Gas Butana <span>Rp. 13.000</span></li>
+            <li>Lampu Tenda + Baterai <span>Rp. 10.000</span></li>
+            <li>Senter <span>Rp. 10.000</span></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Tenda</h3>
+          <ul class="list">
+            <li>Kursi <span>Rp. 15.000</span></li>
+            <li>Meja <span>Rp. 20.000</span></li>
+            <li>Lampu Kafe 10 Meter <span>Rp. 45.000</span></li>
+            <li>Lampu Sorot <span>Rp. 25.000</span></li>
+            <li>Kabel Stop Kontak <span>Rp. 15.000</span></li>
+          </ul>
+          <h3>Perlengkapan</h3>
+          <ul class="list">
+            <li>Paket Grill Pan <span>Rp. 55.000</span></li>
+            <li>Paket Memasak Lengkap <span>Rp. 65.000</span></li>
+            <li>Paket Meja Kursi <span>Rp. 80.000</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="wisata-card">
-        <p class="title-wisata">Shuttle Negeri Kahyangan</p>
-        <img src="images/paket-wisata/Shuttle.jpg" alt="">
-        <a href="https://drive.google.com/file/d/1breNgjKpTm3iCH07ne60iygApv9FbPvB/view"><button class="selengkapnya">Selengkapnya</button></a>
-      </div>
-      <div class="wisata-card">
-        <p class="title-wisata">Wisata Jeep Negeri kahyangan</p>
-        <img src="images/paket-wisata/Jeep.jpg" alt="">
-        <a href="https://drive.google.com/file/d/1tnl7g7hosFK4HJFBmtUvi2DQyyeozhmR/view"><button class="selengkapnya">Selengkapnya</button></a>
-      </div>
-    </div>
-  </div>
+    </div>
+  </div>
 
   <br>
 
   <!--Section 5 : Gallery -->
 
+ 
   <div id="galeri" class="galeri-section">
     <h1>GALERI</h1>
     <div class="underline"></div>
-  </div>
-  <div class="slider">
-    <div class="list">
-      <div class="item">
-        <img src="images\gallery\1-merapi.JPG" alt="Merapi">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/gallery/pic (1).jpg" class="d-block w-100" alt="First Slide">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/gallery/pic (3).jpg" class="d-block w-100" alt="Second Slide">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (4).jpg" class="d-block w-100" alt="Third Slide">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (5).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (6).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (7).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (8).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (9).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (10).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (11).jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery/pic (12).jpg" class="d-block w-100" alt="">
+        </div>
       </div>
-      <div class="item">
-        <img src="images\gallery\2-kuda.JPG" alt="Patung Kuda">
-      </div>
-      <div class="item">
-        <img src="images/gallery\3-hero.JPG" alt="Gerbang">
-      </div>
-      <div class="item">
-        <img src="images/gallery/4-overview.JPG" alt="Overview">
-      </div>
-      <div class="item">
-        <img src="images/gallery/5-lembah.jpg" alt="Pemandangan">
-      </div>
-      <div class="item">
-        <img src="images/gallery/6-overview2.JPG" alt="Overview2">
-      </div>
-      <div class="item">
-        <img src="images/gallery/7-istana.JPG" alt="Istana">
-      </div>
-      <div class="item">
-        <img src="images/daya-tarik-images/Kahyangan Sky Bridge.JPG" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\9-balkon.jpg" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\10-denahKahyangan.jpg" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\11-parkir.jpg" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\12-warung.JPG" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\13-toilet.JPG" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\14-mushola.JPG" alt="Warung Makan">
-      </div>
-      <div class="item">
-        <img src="images\gallery\15-tiket.jpg" alt="Warung Makan">
-      </div>
-    </div>
-    <div class="buttons">
-      <button id="prev">
-        <button id="next">>
-        </button>
-    </div>
-    <ul class="dots">
-      <li class="active"></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-  <script src="javascript/gallery.js"></script>
-
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
   <br>
 
   <!--Section 6: Ulasan-->
@@ -318,85 +378,72 @@
         <div class="carousel-item active">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Kawasan disini ada; area parkir dan pedagang, gerbang, cafe, istana, sky bridge dan tempat show yang masih dalam tahap pengembangan. Tempat nyaman, hawanya sejuk adem.</p>
-              <h5 class="card-title">Ari Sulistyo</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Bekasi</h6>
+              <p class="card-text">Tempat camping yang bersih, Ada penjaga 24 jam, terdapat mushola dan toilet. Ada juga cafe Sampai jam 6 sore...belum Ada PLN.... terimakasih buat pak Kuswo...sangat sopan dan baik</p>
+              <h5 class="card-title">Imron Fauzi</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Viewnya indah dan menyegarkan, tak begitu jauh dari Yogyakarta dan bisa ditempuh dengan mobil atau motor kurang lebih 1 jam perjalanan.</p>
-              <h5 class="card-title">Suparyadi</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Yogyakarta</h6>
+              <p class="card-text">Tempatnya bagus, cocok buat kumpul keluarga, teman, atau dengan siapapun yang disayang untuk ngecamp bareng atau hanya sekedar datang dan piknik juga seru. Harus bangettt cobain kesini yang suka jalan jalan petualangan seruuu pokoknya recpmmended!</p>
+              <h5 class="card-title">Tsabita Tahany</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Rekomended banget pokoknya bagi yang mau cari tempat rekreasi baik keluarga maupun bersama teman-teman.</p>
-              <h5 class="card-title">Nanik Aryati</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Magelang</h6>
+              <p class="card-text">Tempat yang sangat cocok untuk bersantai menikmati alam pegunungan, mau tracking Air Terjun jg bisa, Bersih Rapi, Next dijadwalkan Nginep, akses mobil bisa tp tdk untuk mobil ceper ya, bisa sakit tak berdarah</p>
+              <h5 class="card-title">Kuro Hobbies</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Baru pertama berwisata ke sini.
-                Banyak banget spot fotonya dengan nuansa alam.
-                Banyak kedai - kedai makan dengan harga sangat terjangkau.</p>
-              <h5 class="card-title">Sandriena</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Jakarta</h6>
+              <p class="card-text"> Sangat ramah lingkungan asri banget suasananya disarankan kalo ke coban bawa sandal karna lewat sungai dan awas batu agak licin tempat rekomend lah buat pencinta alam</p>
+              <h5 class="card-title">Muh Muedi</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Campervan dan camping disana cukup memuaskan, suplay air cukup dan bersih, serta ada colokan listrik. Sunset dan sunrise indah.</p>
-              <h5 class="card-title">Rizalzal</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Pekalongan</h6>
+              <p class="card-text">Enak dan addm banget waktu dateng kesinii, bisa bareng temen, keluarga, atau pasangan. Tempatnya pun bersihh, pokoknya keren poll terus tiket masuknya juga cuma 10k ges murah bgtt</p>
+              <h5 class="card-title">Naura</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Tempat wisata luas dan bersih. Banyak spot foto, resto dan kafe. Tempat instagramable dan aesthetic ala-ala negeri dongeng dengan view berbagai gunung.</p>
-              <h5 class="card-title">Zilda</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Magelang</h6>
+              <p class="card-text">Camping ground yang natural, bisa have fun di coban Srikandi dan Coban Sanusi,bila ingin berpetualang di beberapa coban lagi ada guidenya. Ada panahan, dart , flying fox, mushalla, Tempat parkir, toilet, warung, serta ruang untuk meeting tersedia.</p>
+              <h5 class="card-title">Indra Sukma</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Semakin malam suasana semakin adem.
-                Kalau beruntung dapat view bintang yang keren.
-                Btw.. Jalan kemari paling enak bedua bersama pasangan dan orang terkasih.</p>
-              <h5 class="card-title">Jaenudin</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Rokan Hilir</h6>
+              <p class="card-text">Tempatnya asri dan beraih sangat cocok untuk mengadakan acara bersama keluarga kerabat dan teman. Sangat recommendedd</p>
+              <h5 class="card-title">Siti Yasni</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Sudah tiga kali kesini waktu mampir ke Magelang. Pemandangannya nggak pernah bosenin. Spot fotonya semakin banyak dan menarik.</p>
-              <h5 class="card-title">Affra</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Sleman</h6>
+              <p class="card-text">Tempat sejuk dan asri cocok buat mencari ketenangan dan ngopi. Minusnya jalan menuju tempat ini lumayan berbatu sempit dan panjang. Disini juga ada beberapa air terjun yang sangat cantik.</p>
+              <h5 class="card-title">Bayu Kriswanto</h5>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card">
             <div class="card-body">
-              <p class="card-text">Pertama kali ke sini bareng suami. MasyaAllah, viewnya indah sekali. Banyak spot foto yang menarik. Harga makanan di warung standar, mendoannya enak sekali.</p>
+              <p class="card-text">Salah satu camp ground ternyaman. Tempatnya sangat bagus dan luas. Fasilitasnya ada musholla, kamar mandi, game seru, dan warung. Selain itu ga perlu ribet bawang tenda dll krn sudah disediakan tenda + peralatanya, lengkap.</p>
               <h5 class="card-title">Nur Aisyah</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Indramayu</h6>
             </div>
           </div>
         </div>
@@ -409,8 +456,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-  </div>
+    </div>
+  </div>
   <!--Akhir Ulasan-->
 
   <!-- Section 7: Kontak-->
@@ -438,28 +485,22 @@
           <hr>
         </div>
         <div class="contact-sosmed">
-          <a href="https://api.whatsapp.com/send?phone=6281510710464&text=Hallo%20Min.." target="_blank">
+          <a href="https://api.whatsapp.com/send?phone=6282247021191&text=Hallo%20Min.." target="_blank">
             <div class="sosmed-button">
               <i class="fab fa-whatsapp"></i>
-              <h5>0815-1071-0464</h5>
+              <h5>082247021191</h5>
             </div>
           </a>
-          <a href="https://www.instagram.com/negeri_kahyangan/" target="_blank">
+          <a href="https://www.instagram.com/benjorpine_campingground/" target="_blank">
             <div class="sosmed-button">
               <i class="fab fa-instagram"></i>
-              <h5>@negeri_kahyangan</h5>
+              <h5>@benjorpine_campingground</h5>
             </div>
           </a>
-          <a href="https://www.tiktok.com/@negerikahyangan_" target="_blank">
+          <a href="https://www.tiktok.com/@benjorpine_campground" target="_blank">
             <div class="sosmed-button">
               <i class="fab fa-tiktok"></i>
-              <h5>@negerikahyangan_</h5>
-            </div>
-          </a>
-          <a href="https://www.facebook.com/people/Negeri-Kahyangan/100074047092972/?_rdr" target="_blank">
-            <div class="sosmed-button">
-              <i class="fab fa-facebook"></i>
-              <h5>Negeri Kahyangan</h5>
+              <h5>@benjorpinecampground</h5>
             </div>
           </a>
           <a href="mailto:Negerikahyangan20@gmail.com" target="_blank">
@@ -468,63 +509,13 @@
               <h5>Kirim Email</h5>
             </div>
           </a>
-        </div>
+        </div>
       </div>
     </div>
   </div>
   <!--Akhir Kontak-->
 
-  <!--Footer Section Started-->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col" id="company">
-          <h3 class="logo">Negeri Kahyangan</h3>
-          <p>Nuansa negeri dongeng di lembah Gunung Merbabu bak negeri kahyangan yang asri dan pastinya instagramable. Dilengkapi dengan berbagai
-            fasilitas yang lengkap serta nyaman membuat Negeri Kahyangan suatu destinasi wisata yang ramah keluarga.
-          </p>
-          <div class="social">
-            <a href="https://www.facebook.com/people/Negeri-Kahyangan/100074047092972/?_rdr" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/negeri_kahyangan/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@negerikahyangan_" target="_blank"><i class="fab fa-tiktok"></i></a>
-          </div>
-        </div>
-
-        <div class="col" id="useful-links">
-          <h3>Links</h3>
-          <div class="links">
-            <a href="#profil">Info</a>
-            <a href="#daya-tarik">Daya Tarik</a>
-            <a href="#fasilitas">Fasilitas</a>
-            <a href="#paket-wisata">Paket Wisata</a>
-            <a href="#galeri">Galeri</a>
-            <a href="#reviewBox">Ulasan</a>
-          </div>
-        </div>
-
-        <div class="col" id="contact">
-          <h3>Kontak</h3>
-          <div class="contact-details">
-            <i class="fa fa-location"></i>
-            <p>Surodadi, Wonolelo, Sawangan <br> Kabupaten Magelang, Jawa Tengah</p>
-          </div>
-          <div class="contact-details">
-            <i class="fa fa-phone"></i>
-            <p>0815-1071-0464</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="form">
-          <form action="">
-            <input type="text" placeholder="Ketik email Anda untuk berita dari kami..." required>
-            <button><i class="fa fa-paper-plane"></i></button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </footer>
+ 
   <!--Footer Section Ended-->
   <script src="javascript/script.js" defer></script>
   <script src="javascript/translation.js"></script>
