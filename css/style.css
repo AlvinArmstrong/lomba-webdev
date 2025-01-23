@@ -710,6 +710,30 @@ margin-bottom: 10px;
   }
 }
 
+/*collapsible wisata*/
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
 /* Section 5 : Galeri */
 .galeri-section {
   text-align: center;
@@ -829,6 +853,10 @@ margin-bottom: 10px;
 .carousel-item {
   margin: 0.5em;
 }
+.carousel-item .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
 .card{
   border: none;
   height: 100%;
@@ -840,6 +868,28 @@ margin-bottom: 10px;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
+}
+/*Rating
+.rating {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+  color: var(--ratingColor);
+  font-weight: bold;
+  position: relative;
+  width: max-content;
+  justify-content: center;
+}
+.rating:before {
+  content: "☆☆☆☆☆";
+}
+
+.rating:after {
+  content: "★★★★★";
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  width: calc(var(--rating) * 1%);
+  overflow: hidden;
 }
 
 
@@ -889,6 +939,7 @@ margin-bottom: 10px;
 .contact-right {
   height: 100%;
   margin: 0;
+  width: fit-content + 500px;
 }
 .subjudul-contact {
   width: 100%;
@@ -919,6 +970,7 @@ margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 .sosmed-button i {
   font-size: 30px;

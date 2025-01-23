@@ -47,4 +47,3 @@ form.addEventListener('submit', function(event) {
   event.preventDefault();  
 }); 
 
-//Double language
