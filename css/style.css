@@ -29,11 +29,12 @@ body {
   text-align: center;
   width: 100%;
   transition: transform 0.3s ease;
+  min-height: 200px;
 }
-/* Main */
+/* Main */  /* perubahan di sini*/
 main {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background: url(../images/hero2.jpg) center no-repeat;
   background-color: #000;
   background-size: cover;
@@ -336,18 +337,42 @@ nav ul li a {
 }
 
 .card-info {
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction:row;
+  gap: 40px;
   flex: 1;
   height: 100%;
+  border-radius: 10%;
+  
 }
 .card-info .card h2, .card-maps h2 {
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
 }
+.card-info .card {
+  width: 400px;
+  top: -100px;
+
+}
+.card button {
+
+ background-color: var(--orange);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 60px;
+  margin: 40px 0;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  bottom: 50px;
+}
 .card-info .card p {
-  font-size: 25px;
+  font-size: 25px;  
   font-weight: 400;
   margin: 20px;
 }
@@ -355,6 +380,26 @@ nav ul li a {
   font-size: 18px;
   font-weight: 400;
   margin: 15px 15px 0px 15px
+}
+.segaris {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.segaris .text-line {
+width: 400px;
+height: 10px;
+background-color: #c98027;
+
+}
+.segaris .recharge {
+  font-size: 40px;
+  text-align: center;
+  color: #000;
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .container-card {
@@ -393,7 +438,7 @@ nav ul li a {
   text-align: center;
 }
 .daya-tarik-section .underline {
-  width: 100px;
+  width: 300px;
   height: 5px;
   background-color: var(--orange);
   margin: 10px auto;
@@ -401,17 +446,26 @@ nav ul li a {
 }
 .daya-card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3 auto);
   gap: 20px;
   margin: 10px 3vw;
 }
+.daya-card-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3 auto);
+  gap: 20px;
+  margin: 30px 3vw;
+}
 .daya-card {
   position: relative;
+  display: flex;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
+  background-color: #ddd;
 }
 .daya-card img {
   width: 100%;
@@ -428,9 +482,16 @@ nav ul li a {
   pointer-events: none;
 }
 
+.daya-card .card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .daya-card .card-title {
 position: absolute;
-bottom: 150px;
+text-align: center;
+bottom: 20px;
 left: 10px;
 font-size: 28px;
 font-weight: 700;
@@ -479,9 +540,9 @@ text-align: center;
    grid-template-columns: 1fr;
    grid-template-rows: auto;
   }
-  .daya-card .card-title {
-   font-size: 22px;
-   bottom: 120px; 
+  .daya-card-grid-2{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
   .daya-card .card-text {
     font-size: 14px;
@@ -491,39 +552,31 @@ text-align: center;
     font-size: 14px;
   }
 }
+@media (max-width: 900px) {
+  .daya-card-grid-2 {
+    grid-template-columns: 2fr;
+    grid-template-rows: 2;
+  }
+}
+
 @media (min-width: 701px) {
-  .daya-card .card-title {
-    font-size: 24px;
-    bottom: 150px;
+ 
   }
   .daya-card .card-text { 
     font-size: 16px;
     bottom: 50px;
   }
-}
+
 @media (min-width: 780px) { 
-  .daya-card .card-title {
-    bottom: 120px;
-  }
-  .daya-card .card-title {
-    font-size: 26px;
-    bottom: 150px;
-  }
+ 
+  
   .daya-card .card-text { 
     font-size: 1;
     bottom: 50px;
   }
 }
-@media (min-width:930px) {
-  .daya-card .card-title {
-    bottom: 120px;
-  }
-}
-@media (min-width:1350px){
-  .daya-card .card-title {
-    bottom: 110px;
-  }
-}
+
+
 
 /* Section 3 : Fasilitas */
 .fasilitas-section {
@@ -544,6 +597,7 @@ text-align: center;
   background-color: var(--orange);
   margin: 10px auto;
   margin-bottom: 50px;
+  
 }
 .fasilitas-grid {
   display: grid;
@@ -1103,3 +1157,5 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+/**/

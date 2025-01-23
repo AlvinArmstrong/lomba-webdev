@@ -15,10 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-  <script src="javascript/script.js" defer></script>
   <!--jQuery-->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -38,6 +38,10 @@
           <li><a href="#reviewBox">Ulasan</a></li>
           <li><a href="#kontakBox">Kontak</a></li>
         </ul>
+        <div class="switchlang">
+          <button onclick="setLanguage('en')">English</button>
+          <button onclick="setLanguage('id')">Bahasa</button>
+        </div>
         <div class="social-icons">
           <a href="https://api.whatsapp.com/send?phone=6281510710464&text=Hallo%20Min.." target="_blank"><i class="fab fa-whatsapp"></i></a>
           <a href="https://www.instagram.com/negeri_kahyangan/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -51,27 +55,15 @@
   <!-- Header Section End-->
 
   <div class="hero-section">
-    <h4>Terbenam dalam Keindahan</h4>
+    <h4 data-i18n="slogan"></h4>
     <h1>NEGERI KAHYANGAN</h1>
-    <p>Nuansa negeri dongeng di lembah Gunung Merbabu bak negeri kahyangan yang asri dan pastinya instagramable. Dilengkapi dengan berbagai
-    fasilitas yang lengkap serta nyaman membuat Negeri Kahyangan suatu destinasi wisata yang ramah keluarga.</p>
+    <p data-i18n="desc-hero"></p>
     <a href="#profil"><button>KUNJUNGI</button></a>
   </div>
 
   <br>
 
-  <!--Section 1 : Infomation-->
-  <div id="profil" class="container-card">
-    <!-- Card Maps -->
-    <div class="card card-maps">
-      <h2>Alamat</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8478793442187!2d110.39940849999999!3d-7.4820445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a634181e93e05%3A0xd27bc64f6fdfa11b!2sNegeri%20Kahyangan!5e0!3m2!1sen!2sid!4v1735271591567!5m2!1sen!2sid"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <p>Surodadi, Wonolelo, Sawangan, Kabupaten Magelang, Jawa Tengah</p>
-    </div>
-
+  
     <!-- Card Info (Jam Buka dan Harga Tiket Masuk) -->
     <div class="card-info">
       <div class="card">
@@ -79,10 +71,20 @@
         <p>06.00 - 18.00</p>
       </div>
       <div class="card">
+        <h2>ALAMAT</h2>
+        <p>Benjor, Kecamatan Tumpang, Malang</p>
+      </div>
+      <div class="card">
         <h2>Harga Tiket Masuk</h2>
         <p>Rp 25.000/orang</p>
       </div>
     </div>
+    <div class="segaris">
+      <div class="text-line"></div>
+      <p class="recharge">Recharge Your Soul with view of waterfall and nature camping ground!</p>
+      <div class="text-line"></div> 
+    </div>
+   
   </div>
 
 
@@ -92,50 +94,47 @@
   <!-- Section 2 : Daya Tarik -->
 
   <div id="daya-tarik" class="daya-tarik-section">
-    <h1>DAYA TARIK</h1>
+    <h1>REKOMENDASI AKTIVITAS</h1>
     <div class="underline">
     </div>
     <div class="daya-card-grid">
       <div class="daya-card">
-        <img src="images/daya-tarik-images/panorama pegunungan.jpg" alt="Panorama Pegunungan">
+        <img src="images/camping.jpg" alt="Panorama Pegunungan">
+        
         <div class="gradient-overlay"></div>
-        <div class="card-title">Panorama Pegunungan</div>
-        <div class="card-text">Pemandangan indah Gunung Merbabu, Merapi dan banyak lagi yang bisa terlihat jelas di setiap sudut di Negeri Kahyangan.</div>
-        <div class="card-price">Include</div>
+        <div class="card-title">Camping Ground</div>
       </div>
       <div class="daya-card">
-        <img src="images/daya-tarik-images/Istana Kahyangan.JPG" alt="Istana Kahyangan">
+        <img src="images/flying fox.jpg" alt="Istana Kahyangan">
         <div class="gradient-overlay"></div>
-        <div class="card-title">Istana Kahyangan</div>
-        <div class="card-text">Sebuah kastil di Negeri Kahyangan. Keindahan pegunungan dari tempat tinggi dengan spot foto yang menarik.</div>
-        <div class="card-price">Include</div>
+        <div class="card-title">Flying Fox</div>
       </div>
       <div class="daya-card">
-        <img src="images/daya-tarik-images/Kahyangan Sky Bridge.JPG" alt="Kahyangan Sky Bridge">
+        <img src="images/kebun kopi.jpg" alt="Kahyangan Sky Bridge">
         <div class="gradient-overlay"></div>
-        <div class="card-title">Kahyangan Sky Bridge</div>
-        <div class="card-text">Rasakan panorama alam hijau yang elok dan asri dari ketinggian yang cocok sebagai spot foto.</div>
-        <div class="card-price">Include</div>
+        <div class="card-title">Wisata Kebun Kopi</div>
+      </div>
+    </div>
+    <div class="daya-card-grid-2">
+      <div class="daya-card ">
+        <img src="images/jembatan ta.jpg" alt="Camping">
+        <div class="gradient-overlay"></div>
+        <div class="card-title">Jembatan Tali</div>
       </div>
       <div class="daya-card">
-        <img src="images/daya-tarik-images/camping.jpg" alt="Camping">
+        <img src="images/coban851.png" alt="Cafe & Resto Negeri Kahyangan">
         <div class="gradient-overlay"></div>
-        <div class="card-title">Camping</div>
-        <div class="card-text">Rasakan suasana alam yang baru dengan menginap di Negeri Kahyangan disertai indahnya sunset, malam, dan sunrise</div>
-        <a href="https://drive.google.com/file/d/1JcvKZLT7J4dVonZKA3jJcH9xlnIBhQW4/view"><div class="card-price">Selengkapnya</div></a>
+        <div class="card-title">Tracking Coban</div>
       </div>
       <div class="daya-card">
-        <img src="images/daya-tarik-images/caferestoNK.jpg" alt="Cafe & Resto Negeri Kahyangan">
+        <img src="images/area panah.jpg" alt="Theater">
         <div class="gradient-overlay"></div>
-        <div class="card-title">Cafe & Resto Negeri Kahyangan</div>
-        <div class="card-text">Haus? Lapar? Tenang saja, disini terdapat cafe & resto yang tidak kalah aesthetic dibarengi dengan live music.</div>
-        <a href="https://drive.google.com/file/d/1oLpd3O2S9H6ZIj-1RUzDdixb1K2KGq1B/view"><div class="card-price">Lihat Menu</div></a>
+        <div class="card-title">Panahan</div>
       </div>
       <div class="daya-card">
-        <img src="images/daya-tarik-images/theaterNK.jpg" alt="Theater">
+        <img src="images/offroad.png" alt="Theater">
         <div class="gradient-overlay"></div>
-        <div class="coming-soon">Theater</div>
-        <div class="card-price">Coming Soon</div>
+        <div class="card-title">Offroad</div>
       </div>
     </div>
   </div>
@@ -523,5 +522,7 @@
     </div>
   </footer>
   <!--Footer Section Ended-->
+  <script src="javascript/script.js" defer></script>
+  <script src="javascript/translation.js"></script>
 </body>
 </html>
