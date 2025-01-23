@@ -30,6 +30,7 @@ body {
   width: 100%;
   transition: transform 0.3s ease;
 }
+
 /* Main */
 main {
   width: 100%;
@@ -73,9 +74,10 @@ a {
 }
 
 .nav .logo {
-  font-size: 1.5vw;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   letter-spacing: 1px;
+  font-weight: bold;
   color: #fff;
   text-decoration: none; 
   margin-top: 0;
