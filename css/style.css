@@ -29,6 +29,7 @@ body {
   text-align: center;
   width: 100%;
   transition: transform 0.3s ease;
+  min-height: 200px;
 }
 /* Main */  /* perubahan di sini*/
 main {
@@ -368,6 +369,7 @@ nav ul li a {
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  bottom: 50px;
 }
 .card-info .card p {
   font-size: 25px;  
